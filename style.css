@@ -354,21 +354,14 @@
 }
 
 .card-video > h2 {
-  position: absolute;
   width: 808px;
   height: 48px;
-  left: 316px;
-  top: 10px;
-  bottom: 1264px;
   color: #ffffff;
 }
 
 .card-video > p {
-  position: absolute;
   width: 945px;
   height: 163px;
-  left: 248px;
-  top: 153px;
   padding: 5px;
   display: flex;
   align-items: center;
@@ -376,11 +369,9 @@
 }
 
 .col-video2 {
-  position: absolute;
   width: 734px;
   height: 482px;
-  left: 353px;
-  top: 350px;
+  position: relative;
 }
 
 .video2 {
@@ -449,19 +440,61 @@
   color: #000000;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 400ppx) {
+@media screen and (max-width: 400ppx) {
 }
-@media only screen and (min-width: 401px) and (max-width: 800ppx) {
-}
-@media only screen and (min-width: 801px) and (max-width: 1200ppx) {
+@media screen and (max-width: 800px) {
+  #cab {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+    gap: 15px;
+  }
+
+  .card-header {
+    height: auto;
+  }
+
+  .card-header__wrapper p {
+    width: 100%;
+    height: auto;
+  }
+
+  .dpri, .dseg, .dterc {
+      display: flex !important;
+      flex-direction: column;
+      height: auto;
+      padding-top: 50px !important;
+  }
+
 }
 
-@media only screen and (max-width: 900px) {
+@media screen and  (max-width: 900px){
+  .dpri, .dseg, .dterc, #model-section, .feedback-client, .cliente-image {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px;
+    gap: 30px;
+    overflow: hidden;
+  }
 
+  #model-section img {
+    width: 50%;
+  }
+
+  .patrocinadores {
+    height: auto;
+  }
+
+  .card-video > p {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
-  .container {
-    max-width: 100%;
+  .card-video, #line1 {
+    width: 100%;
+    box-sizing: border-box;
   }
 }
