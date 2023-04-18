@@ -330,7 +330,7 @@
   height: 138px;
   width: 100%;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   gap: 15px;
   flex-wrap: wrap;
 }
@@ -409,6 +409,7 @@
   text-decoration: none;
   background: #e12287;
   border-radius: 20px;
+  margin-top: 30px;
 }
 
 #line1 {
@@ -585,12 +586,25 @@
     overflow: hidden;
   }
 
+  .text-top {
+    width: 400px;
+  }
+
   #model-section img {
     width: 50%;
   }
 
   .patrocinadores {
     height: auto;
+  }
+
+  .patrocinadores {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .patrocinadores img {
+    margin: 0 auto;
   }
 
   .card-video > p {
