@@ -461,6 +461,9 @@
     padding: 100px 0;
     width: 100%;
     box-sizing: border-box;
+    background-size: auto;
+    background-size: cover;
+    background-position: center;
   }
 
   .card-header__wrapper {
@@ -544,6 +547,8 @@
   .card-video {
     height: auto;
     padding-bottom: 50px;
+    background-size: cover;
+    background-position: center;
   }
 
   .card-video h2 {
